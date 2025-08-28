@@ -1,0 +1,50 @@
+.calculator {
+    border-radius: 10px;
+    background-color: lightgray;
+    padding: 20px;
+    width: 30%;
+    height: 55vh;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.buttons button{
+    height: 8vh;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.buttons button:hover{
+     background-color: bisque;
+}
+
+.number-btn {
+    padding: 10px;
+}
+
+.display input{
+    width: 98%;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 30px;
+    border-color: white;
+    text-align:right ;
+}
+
+.ch button{
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+}
+
+.clear {
+    margin-left: 10px;    
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+        <div class="display">
+            <input id="calculation" readonly>
+        </div>
+        <div class="buttons">
+            <button class="operator-btn" onclick="operatorBtn('%')">%</button>
+            <button class="number-btn" onclick="clearEntry()">CE</button>
+            <button class="number-btn" onclick="clearInput()">C</button>
+            <button class="number-btn" onclick="remove()"><i class="material-icons" style="font-size: 18px;">backspace</i></button>
+            <button class="number-btn" onclick="numberBtn('7')">7</button>
+            <button class="number-btn"onclick="numberBtn('8')">8</button>
+            <button class="number-btn"onclick="numberBtn('9')">9</button>
+            <button class="operator-btn" onclick="operatorBtn('x')">x</button>
+            <button class="number-btn"onclick="numberBtn('4')">4</button>
+            <button class="number-btn"onclick="numberBtn('5')">5</button>
+            <button class="number-btn"onclick="numberBtn('6')">6</button>
+            <button class="operator-btn" onclick="operatorBtn('-')">-</button>
+            <button class="number-btn"onclick="numberBtn('1')">1</button>
+            <button class="number-btn"onclick="numberBtn('2')">2</button>
+            <button class="number-btn" onclick="numberBtn('3')" id="3" value="3">3</button>
+            <button class="operator-btn" id="add" value="+" onclick="operatorBtn('+')">+</button>
+            <button class="number-btn"onclick="numberBtn('0')">0</button>
+            <button class="number-btn" onclick="numberBtn('.')">.</button>
+            <button class="operator-btn" onclick="operatorBtn('/')">/</button>
+            <button class="operator-btn" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <div class="clear">
+        <p>History: <div id="history"></div></p>
+    </div>
+    </div>
+
+    <div class="ch">
+        <button type="button" onclick="clearHistory()">Clear History</button>
+    </div>
+
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>
